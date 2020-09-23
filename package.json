@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/ezekielp/portfolio_site_2020",
   "author": "Ezekiel Pfeifer",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
 }
