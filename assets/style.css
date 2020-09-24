@@ -5,7 +5,7 @@
 }
 
 html, body, section, article,
-h1, h2, strong, em, a, button,
+h1, h2, ul, li, strong, em, button,
 input, select {
   margin: 0;
   border: 0;
@@ -19,19 +19,34 @@ input, select {
   background: transparent;
 }
 
-section {
-  margin-bottom: 1.5rem;
+ul, li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+main {
+  margin: 0 auto;
   max-width: 500px;
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
 .header-name {
-  font-size: 2rem;
+  font-size: 4rem;
   font-variation-settings: 'wght' 600;
   margin-bottom: 3rem;
+  margin-left: 4rem;
+  margin-top: 3rem;
 }
 
 .subheader {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -40,63 +55,76 @@ section {
 .logo-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .logo {
-  height: 25px;
-  background-size: auto 25px;
+  height: 35px;
+  background-size: cover;
+  margin-right: 15px;
 }
 
-#angellist {
-  background: url('angellist.png');
+.angellist {
+  background-image: url('angellist.png');
 }
 
-#aws {
-  background: url('aws.svg');
+.aws {
+  background-image: url('aws.svg');
+  width: 58px;
 }
 
-#docker {
-  background: url('docker.dvg');
+.docker {
+  background-image: url('docker.svg');
+  width: 35px;
 }
 
-#github {
-  background: url('github.png');
+.github {
+  background-image: url('github.png');
 }
 
-#graphql {
-  background: url('graphql.svg');
+.graphql {
+  background-image: url('graphql.svg');
+  width: 35px;
 }
 
-#javascript {
-  background: url('javascript.png');
+.javascript {
+  background-image: url('javascript.png');
+  width: 35px;
 }
 
-#linkedin {
-  background: url('linkedin.png');
+.linkedin {
+  background-image: url('linkedin.png');
 }
 
-#rails {
-  background: url('rails.svg');
+.rails {
+  background-image: url('rails.svg');
+  width: 93px;
+  margin-right: 5px;
 }
 
-#react {
-  background: url('react.svg');
+.react {
+  background-image: url('react.svg');
+  width: 50px;
+  margin-right: 5px;
 }
 
-#redux {
-  background: url('redux.svg');
+.redux {
+  background-image: url('redux.svg');
+  width: 37px;
 }
 
-#ruby {
-  background: url('ruby.svg');
+.ruby {
+  background-image: url('ruby.svg');
+  width: 35px;
 }
 
-#typescript {
-  background: url('typescript.svg');
+.typescript {
+  background-image: url('typescript.svg');
+  width: 35px;
 }
 
 .skills-description {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 
