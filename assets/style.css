@@ -29,7 +29,8 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
+  width: 80%;
 }
 
 section {
@@ -47,25 +48,55 @@ section {
 .subheader {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-variation-settings: 'wght' 550;
 }
 
+.cv-link {
+  text-decoration: none;
+  color: black;
+  width: 105px;
+  display: block;
+}
+
+.cv-btn {
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 20px 30px;
+  width: 105px;
+  font-variation-settings: 'wght' 550;
+}
 
 /* SKILLS */
+
+@media screen and (min-width: 650px) {
+  .logo-container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .logo-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 1rem;
+  }
+}
 
 .logo-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .logo {
   height: 35px;
   background-size: cover;
-  margin-right: 15px;
-}
-
-.angellist {
-  background-image: url('angellist.png');
+  margin-bottom: 1rem;
 }
 
 .aws {
@@ -78,10 +109,6 @@ section {
   width: 35px;
 }
 
-.github {
-  background-image: url('github.png');
-}
-
 .graphql {
   background-image: url('graphql.svg');
   width: 35px;
@@ -90,10 +117,6 @@ section {
 .javascript {
   background-image: url('javascript.png');
   width: 35px;
-}
-
-.linkedin {
-  background-image: url('linkedin.png');
 }
 
 .rails {
@@ -131,7 +154,7 @@ section {
 /* PROJECTS */
 
 .project-name {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .project-image {
@@ -148,27 +171,50 @@ section {
   width: 50%;
 }
 
+.contact-symbols-container .contact-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 220px;
+  align-items: center;
+  height: 250px;
+}
+
 .contact-logo {
-  height: 1rem;
-  background-size: auto 1rem;
+  width: 30px;
+  background-size: cover;
 }
 
-#at_symbol {
-  background: url('@_symbol.svg');
+.at_symbol {
+  background-image: url('@_symbol.svg');
+  height: 31px;
 }
 
-#phone {
-  background: url('phone.svg');
+.phone {
+  background-image: url('phone.svg');
+  height: 30px;
 }
 
-#github {
-  background: url('github.png');
+.angellist {
+  background-image: url('angellist.png');
+  height: 33px;
+  width: 23px;
+  margin-left: 3px;
 }
 
-#linkedin {
-  background: url('linkedin.png');
+.github {
+  background-image: url('github.png');
+  height: 30px;
 }
 
-#angellist {
-  background: url('angellist.png');
+.linkedin {
+  background-image: url('linkedin.png');
+  height: 30px;
 }
+
