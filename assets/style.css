@@ -1,6 +1,7 @@
 @font-face {
   font-family: Rubik;
   src: url('Rubik-VariableFont_wght.ttf');
+  font-size: 16px;
 }
 
 html, body, section, article,
@@ -19,7 +20,67 @@ input, select {
 }
 
 .header-name {
-  font-size: 30px;
+  font-size: 2rem;
   font-variation-settings: 'wght' 600;
 }
 
+.subheader {
+  font-size: 1.5rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  height: 25px;
+}
+
+#angellist {
+  background: url('angellist.png');
+}
+
+#aws {
+  background: url('aws.svg');
+}
+
+#docker {
+  background: url('docker.dvg');
+}
+
+#github {
+  background: url('github.png');
+}
+
+#graphql {
+  background: url('graphql.svg');
+}
+
+#javascript {
+  background: url('javascript.png');
+}
+
+#linkedin {
+  background: url('linkedin.png');
+}
+
+#rails {
+  background: url('rails.svg');
+}
+
+#react {
+  background: url('react.svg');
+}
+
+#redux {
+  background: url('redux.svg');
+}
+
+#ruby {
+  background: url('ruby.svg');
+}
+
+#typescript {
+  background: url('typescript.svg');
+}
