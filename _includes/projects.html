@@ -4,10 +4,13 @@
   <div class="subheader">Projects</div>
   <ul>
     {% for project in projects %}
-    <li>
+    <li class="project-li">
       <div class="project-name">{{ project.title }}</div>
-      <a href="{{ project.href }}">
-        <img class="project-image" src="{{ project.image_src }}" alt="Image for {{ project.description }}">
+      <a href="{{ project.href }}" target="_blank">
+        <div class="image-container">
+            <img class="project-image" src="{{ project.image_src }}" alt="Image for {{ project.description }}">
+            <div class="project-desc">{{ project.description }}</div>
+        </div>
       </a>
     </li>
     {% endfor %}
