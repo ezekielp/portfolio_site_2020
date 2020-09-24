@@ -109,3 +109,38 @@ section {
 .project-image {
   width: 100%;
 }
+
+
+/* CONTACT */
+
+.contact-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.contact-logo {
+  height: 1rem;
+  background-size: auto 1rem;
+}
+
+#at_symbol {
+  background: url('@_symbol.svg');
+}
+
+#phone {
+  background: url('phone.svg');
+}
+
+#github {
+  background: url('github.png');
+}
+
+#linkedin {
+  background: url('linkedin.png');
+}
+
+#angellist {
+  background: url('angellist.png');
+}
