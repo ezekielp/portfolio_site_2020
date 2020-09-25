@@ -163,13 +163,11 @@ section {
 .rails {
   background-image: url('rails.svg');
   width: 93px;
-  margin-right: 5px;
 }
 
 .react {
   background-image: url('react.svg');
-  width: 50px;
-  margin-right: 5px;
+  width: 41px;
 }
 
 .redux {
